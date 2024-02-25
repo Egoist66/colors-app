@@ -1,0 +1,35 @@
+.nodata {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+
+}
+
+.getRandomBtn {
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.portalBtnWrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    & button {
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        transition: 0.3s all ease;
+        will-change: contents;
+
+        &:active {
+            transform: scale(1.025);
+            transition: 0.3s all ease;
+            will-change: contents;
+        }
+    }
+}
